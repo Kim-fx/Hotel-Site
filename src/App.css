@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+.allign{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+.cart{
+  width: 100%;
+  color: #00aeff;
+}
+.table{
+  width: 100%;
+}
+.Analize{
+  display: flex;
+}

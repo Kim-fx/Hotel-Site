@@ -1,0 +1,8 @@
+[1219/205356.480:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1222/145159.305:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1230/103902.703:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1231/035200.747:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0104/142504.780:ERROR:crash_report_database_win.cc(496)] failed to stat report
+[0104/143508.505:ERROR:crash_report_database_win.cc(496)] failed to stat report
+[0104/143508.505:ERROR:filesystem_win.cc(116)] GetFileAttributes C:\Users\Jking\AppData\Local\Google\Chrome\User Data\Crashpad\reports\3b513985-5a4d-440a-981e-1f654bed224b.dmp: The system cannot find the file specified. (0x2)
+[0104/143508.534:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
