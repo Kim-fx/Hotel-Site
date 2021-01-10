@@ -6,7 +6,6 @@ import {
     Link
   } from "react-router-dom";
 import HotelCards from '../components/Hotel-cards'
-import Sidemenu from '../components/Sidenav';
 import 'rsuite/dist/styles/rsuite-default.css';
 import 'rsuite/lib/styles/index.less';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,14 +14,9 @@ const Rooms = () => {
     return (
         <div>
             <Router>
-            <div className='row'>
-                    <div className='nav'>
-                        <Sidemenu />
-                    </div>
                     <div>
                         <HotelCards/>
                     </div>
-                </div>
                 
             </Router>
         </div>

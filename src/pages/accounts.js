@@ -17,9 +17,6 @@ const Accounts = () => {
         <div>
             <Router>
                 <div className='row'>
-                    <div className='nav'>
-                        <Sidemenu />
-                    </div>
                     <div>
                         <Tableview/>
                     </div>

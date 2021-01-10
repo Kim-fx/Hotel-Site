@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Dropdown, Sidenav, Icon, Toggle,Nav  } from "rsuite";
+import {Sidenav, Icon, Toggle,Nav  } from "rsuite";
 import {
   BrowserRouter as Router,
   Switch,
@@ -40,6 +40,7 @@ class Sidemenu extends Component {
             activeKey={this.state.activeKey}
             onSelect={this.handleSelect}
           >
+          <Router>
             <Sidenav.Body>
               <Nav>
                 <Nav.Item eventKey="1" icon={<Icon icon="dashboard" />}>
@@ -48,33 +49,29 @@ class Sidemenu extends Component {
                 <Nav.Item eventKey="2" icon={<Icon icon="group" />}>
                   User Group
                 </Nav.Item>
-                <Dropdown
-                  placement="rightStart"
-                  eventKey="3"
-                  title="Advanced"
-                  icon={<Icon icon="magic" />}
-                >
-                  <Dropdown.Item eventKey="3-1">Geo</Dropdown.Item>
-                  <Dropdown.Item eventKey="3-2">Devices</Dropdown.Item>
-                  <Dropdown.Item eventKey="3-3">Loyalty</Dropdown.Item>
-                  <Dropdown.Item eventKey="3-4">Visit Depth</Dropdown.Item>
-                </Dropdown>
-                <Dropdown
-                  placement="rightStart"
-                  eventKey="4"
-                  title="Settings"
-                  icon={<Icon icon="gear-circle" />}
-                >
-                  <Dropdown.Item eventKey="4-1">Applications</Dropdown.Item>
-                  <Dropdown.Item eventKey="4-2">Channels</Dropdown.Item>
-                  <Dropdown.Item eventKey="4-3">Versions</Dropdown.Item>
-                  <Dropdown.Menu eventKey="4-5" title="Custom Action">
-                    <Dropdown.Item eventKey="4-5-1">Action Name</Dropdown.Item>
-                    {/* <Dropdown.Item eventKey="4-5-2">Action Params</Dropdown.Item> */}
-                  </Dropdown.Menu>
-                </Dropdown>
+                <Nav.Item eventKey="3" icon={<Icon icon="table" />}>
+                  <Link to="/Accounts">
+                    <li>Accounts</li>
+                  </Link>
+                </Nav.Item>
+                <Nav.Item eventKey="4" icon={<Icon icon="bed" />}>
+                  <Link to="/Rooms">
+                    Rooms
+                  </Link>
+                </Nav.Item>
+                <Nav.Item eventKey="5" icon={<Icon icon="user-analysis" />}>
+                  <Link to="/Analysis">
+                    Analysis
+                  </Link>
+                </Nav.Item>
+                <Nav.Item eventKey="6" icon={<Icon icon="commenting" />}>
+                  <Link to="/Review">
+                    Review
+                  </Link>
+                </Nav.Item>
               </Nav>
             </Sidenav.Body>
+            </Router> 
           </Sidenav>
         </div>
       );

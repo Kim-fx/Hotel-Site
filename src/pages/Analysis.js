@@ -19,19 +19,15 @@ const Analysis = () => {
         <div>
             <Router>
                 <div className='row'>
-                    <div className='nav'>
-                        <Sidemenu />
-                    </div>
-                           
                     <div className='col-7'>
                         <LineChart/>
-                    <div className='col-2'>
+                    <div className='col-1'>
                         <Charts/> 
                          
                     </div>
-                    <div className='col-3'>
+                    {/* <div className='col-3'> */}
                         <Piechart/> 
-                    </div>
+                    {/* </div> */}
                     </div>
                 </div>
             </Router>
