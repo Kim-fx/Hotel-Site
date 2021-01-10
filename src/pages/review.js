@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 import {
     BrowserRouter as Router,
@@ -24,5 +25,4 @@ const Rooms = () => {
         </div>
     )
 }
-
 export default Rooms
